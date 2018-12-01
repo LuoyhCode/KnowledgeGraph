@@ -67,7 +67,7 @@ def regexMatch(words):
     #辩护人
     pattern_defender=re.compile(r'辩护人[\u4e00-\u9fa5]{2,3}')
     #被害人
-    pattern_victim = re.compile(r'被害人[\u4e00-\u9fa5]{1,2}(?:某甲|某乙|某丙|某丁|某某|某)')
+    pattern_victim = re.compile(r'(?<=行人|害人)[\u4e00-\u9fa5]{1,2}(?:某甲|某乙|某丙|某丁|某某|某)')
     #原告人
     pattern_plaintiff=re.compile(r'(?<=原告人)[\u4e00-\u9fa5]{1,2}(?:某甲|某乙|某丙|某丁|某某|某)')
     #证人
